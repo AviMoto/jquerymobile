@@ -37,7 +37,7 @@ body {
 }
 
 .ui-content {
-	background-image: url(../images/background.png);
+	background-image: url(../images/background_dark.png);
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -96,14 +96,10 @@ iframe,.ui-input-text {
 #headerSlogen {
 	font-size: 90%;
 	margin: 0 29%;
+	text-shadow: none;
 }
 
 picture {
-	margin: 0 auto;
-	display: block;
-}
-
-picture img {
 	margin: 0 auto;
 	display: block;
 }
@@ -115,4 +111,47 @@ picture img {
 
 #slogen {
 	margin-right: 2em;
+	margin-bottom:1em;
+	animation-name: sale;
+	-webkit-animation-name: sale;
+	-moz-animation-name: sale;
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate;
+	-moz-animation-direction: alternate;
+}
+#logo{
+	background-image: url("/assets/images/mobile_logo172x60.png");
+	width: 172px;
+	height: 60px;
+	margin: 0 auto;
+	display: block;
+}
+
+@-webkit-keyframes sale{
+	from {color:#ffffff;}
+	to {color:#01AEF0;}	
+}
+@keyframes sale {
+	from {color:#ffffff;}
+	to {color:#01AEF0;}	
+}
+@-moz-keyframes sale{
+	from {color:#ffffff;}
+	to {color:#01AEF0;}
+}
+@MEDIA screen and (min-width: 35em) {
+	.ui-content {
+		background-image: url(../images/background1920x1080.png);
+	}
+	#logo{
+		background-image: url("/assets/images/mobile_logo.png");
+		width: 310px;
+		height: 108px;
+	}
 }

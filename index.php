@@ -15,11 +15,9 @@
 	<div data-role="page" data-control-title="landPage" id="landPage"
 		class="mainPage">
 		<header data-role="header">
-			<picture>
-			    <source media="(min-width:24.1em)" srcset="assets/images/mobile_logo.png">
-			    <source media="(max-width:24em)" srcset="assets/images/mobile_logo172x60.png"></source>
-                <img src="assets/images/ajax-loader.gif">			
-			</picture>
+			<div id="logo">
+			
+			</div>
 			<div class="whiteLine"></div>
 			<h1 id="headerSlogen">להקה <span class="blueText">לחתונות שמחות</span></h1>
 			<div class="blueLine"></div>

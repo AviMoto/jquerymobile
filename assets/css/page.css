@@ -38,10 +38,10 @@ body {
 
 .ui-content {
 	background-image: url(../images/background.png);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -95,6 +95,7 @@ iframe,.ui-input-text {
 
 #headerSlogen {
 	font-size: 90%;
+	margin: 0 29%;
 }
 
 picture {

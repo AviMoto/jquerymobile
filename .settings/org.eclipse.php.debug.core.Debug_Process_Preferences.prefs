@@ -1,4 +1,4 @@
-DefaultProjectBasePath=/mamakim
+DefaultProjectBasePath=mamakim
 eclipse.preferences.version=1
 org.eclipse.php.debug.core.use-project-settings=true
 org.eclipse.php.debug.coredefaultPHP=PHP 5.5.7 (CLI)

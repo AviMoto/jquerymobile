@@ -6,9 +6,15 @@ body {
 	height: 100%;
 	text-align: right;
 }
-.ui-input-text input{
+
+.ui-input-text input {
 	text-align: right;
 }
+
+div.ui-input-text {
+	margin: 1em auto;
+}
+
 .mainPage {
 	background-color: #000000;
 }
@@ -36,7 +42,7 @@ body {
 	text-shadow: 0 -2px 2px #633737;
 }
 
-.ui-content {
+#landPage {
 	background-image: url(../images/background_dark.png);
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
@@ -44,7 +50,6 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
 }
 
 .ui-header .ui-title {
@@ -68,7 +73,7 @@ body {
 	box-shadow: 0px 0px 12px red;
 }
 
-iframe,.ui-input-text {
+iframe, .ui-input-text {
 	margin: 0px auto;
 	display: -moz-box;
 	display: -webkit-box;
@@ -97,8 +102,16 @@ iframe,.ui-input-text {
 	font-size: 90%;
 	margin: 0 29%;
 	text-shadow: none;
+	text-align: center;
+	padding: .7em 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	outline: 0 !important;
 }
-
+#formTitle{
+	margin: 1em 30%;
+}
 picture {
 	margin: 0 auto;
 	display: block;
@@ -110,48 +123,93 @@ picture {
 }
 
 #slogen {
-	margin-right: 2em;
-	margin-bottom:1em;
+	margin-left: auto;
+	margin-right: auto;
+	display: table; 
 	animation-name: sale;
 	-webkit-animation-name: sale;
 	-moz-animation-name: sale;
-	animation-duration: 2s;
-	-webkit-animation-duration: 2s;
-	-moz-animation-duration: 2s;
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	-moz-animation-iteration-count: infinite;
 	animation-direction: alternate;
 	-webkit-animation-direction: alternate;
 	-moz-animation-direction: alternate;
+	margin-bottom: 1em;
 }
-#logo{
+
+#logo {
 	background-image: url("/assets/images/mobile_logo172x60.png");
 	width: 172px;
 	height: 60px;
 	margin: 0 auto;
 	display: block;
 }
-
-@-webkit-keyframes sale{
-	from {color:#ffffff;}
-	to {color:#01AEF0;}	
+#customer{
+	display: none;
+	max-width: 29em;
+}
+.ui-block-a{
+	clear: right;
+	float: right;
+}
+.ui-block-b{
+	clear: left;
+	float: left;
+}
+#names{
+	float: left;
+}
+@-webkit-keyframes sale {
+	from {color: #ffffff;}
+	to {color: #01AEF0;}
 }
 @keyframes sale {
-	from {color:#ffffff;}
-	to {color:#01AEF0;}	
+	from {color: #ffffff;}
+	to {color: #01AEF0;}
 }
-@-moz-keyframes sale{
-	from {color:#ffffff;}
-	to {color:#01AEF0;}
+
+@-moz-keyframes sale {
+	from {color: #ffffff;}
+	to {color: #01AEF0;}
 }
 @MEDIA screen and (min-width: 35em) {
-	.ui-content {
+	#landPage {
 		background-image: url(../images/background1920x1080.png);
 	}
-	#logo{
+	#logo {
 		background-image: url("/assets/images/mobile_logo.png");
 		width: 310px;
 		height: 108px;
+	}
+	#customer {
+		display: block;
+		margin-top: 6em;
+	}
+	#customer:before{
+		display: inline-block;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		font-size: 24px;
+		position: relative;
+		content: "";
+		background: url("../images/quote-rtl.png");
+		width: 29px;
+		height: 19px;
+		top: -10px;
+		opacity: 0.6;
+		filter: alpha(opacity=60);
+	}
+}
+
+@MEDIA screen and (min-width: 70em) {
+	iframe{
+		width:25em;
+		height: 12.5em;
 	}
 }

@@ -2,6 +2,7 @@
  * 
  */
 $(function(){
+	$("#mainContent").css("min-height",$(window).height() - (180 + $("header").height()));
 	$("#contactUs").submit(function(event){
 		event.preventDefault();
 		var userName = $("#userName").val();
@@ -28,8 +29,8 @@ $(function(){
 			    		console.log("get " + resStatus + " : " + errorThrown);
 			    	},
 			    	success : function(data, status, xhr) {
-			    		console.log(data);
-			    		//location.href="#thankyou";
+			    		
+			    		 $("#mainContent").html(data.data);
 			    	}
 				}	
 			);

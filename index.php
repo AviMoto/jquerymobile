@@ -22,7 +22,7 @@
 			</h1>
 			<div class="blueLine"></div>
 		</header>
-		<section role="main" class="ui-content ui-grid-a ui-responsive">
+		<section role="main" class="ui-content ui-grid-a ui-responsive" id="mainContent">
 			<section id="right" class="ui-block-a">
 				<h2>מתחתנים?</h2>
 				<div>
@@ -50,16 +50,16 @@
 				</form>
 			</section>
 		</section>
-		<div class="blueLine"></div>
 		<section id="footer">
+		    <div class="blueLine"></div>
+		    <section id="footerContent">
 			<button id="callUs"
 				class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-phone">
 				צלצלו עכשיו</button>
 			<span id="details">רונן <a href="tel:050-675-6429">050-675-6429</a></span>
+			<h2 id="footerSlogen">חוויה של קצב ונשמה</h2>
+			</section>
 		</section>
-		<h2 id="footerSlogen">חוויה של קצב ונשמה</h2>
 	</div>
-	<div data-role="page" data-control-title="thankYou" id="thankyou">תודה
-		על פנייתך אנו ניצור עמך קשר בהקדם</div>
 </body>
 </html>
